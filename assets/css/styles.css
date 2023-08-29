@@ -1,0 +1,377 @@
+  @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+
+  * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+      font-family: 'Lora', serif;
+  }
+
+  body {
+      max-width: 1920px;
+      min-width: 260px;
+      font-size: 16px;
+  }
+
+  li {
+      list-style: none;
+  }
+
+  nav {
+      transition: background-color 0.3s ease;
+      background-color: transparent;
+
+  }
+
+  p {
+      margin: 0;
+  }
+
+  a {
+      text-decoration: none;
+  }
+
+
+  .header-scrolled {
+      background-color: black;
+  }
+
+  .nav-container {
+      padding: 0px 50px;
+  }
+
+  .background-black {
+      background-color: black;
+  }
+
+  @media(max-width: 992px) {
+      .nav-container {
+          padding: 0px 0px;
+      }
+
+  }
+
+
+
+
+  .logo-text {
+      font-size: 17px;
+      font-family: 'Lora', serif;
+      font-family: 'Arimo', sans-serif;
+  }
+
+  .img-logo {
+      max-width: 40px;
+      max-height: 40px;
+  }
+
+
+
+
+
+
+  /*  PRINCIPAL  */
+  .img-principal-1 {
+      background-image: url("../images/porteiro.jpg");
+      background-size: cover;
+      filter: brightness(0.5);
+      z-index: -1;
+      height: 100%;
+  }
+
+
+  .img-principal-2 {
+      background-image: url("../images/recepcionista.jpg");
+      background-size: cover;
+      filter: brightness(0.5);
+      z-index: -1;
+      height: 100%;
+  }
+
+  .img-principal-3 {
+      background-image: url("../images/zelador.jpg");
+      background-size: cover;
+      filter: brightness(0.5);
+      z-index: -1;
+      height: 100%;
+  }
+
+
+
+
+
+
+
+
+  /*   SERVIÇOS   */
+  .card-body {
+      padding: 0px;
+  }
+
+  .card-title {
+      margin: 5px 0px;
+  }
+
+  .card.-title {
+      text-decoration: none;
+  }
+
+  @media(max-width: 954px) {
+      .card-body {
+          text-align: center;
+      }
+
+      .card-body>.card-text {
+          display: none;
+      }
+
+      .card-body>button {
+          display: none;
+      }
+
+  }
+
+  @media(min-width: 954px) {
+      .card-body {
+          padding: 15px;
+          padding-bottom: 20px;
+      }
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+  /*    CLIENTES    */
+  .container-cards-clientes {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+
+  .carousel-inner>.carousel-item {
+      height: 300px;
+  }
+
+  .carousel-item>.carousel-caption {
+      bottom: 2rem;
+  }
+
+  .carousel-caption>h1 {
+      font-size: 8vw;
+      word-break: keep-all;
+      font-family: 'Lora', serif;
+  }
+
+  .carousel-caption>p {}
+
+
+
+
+  /* 1st BREAK POINT */
+
+  @media(min-width: 500px) {
+
+      .logo-text {
+          font-size: 20px;
+          font-family: 'Lora', serif;
+          font-family: 'Arimo', sans-serif;
+      }
+
+      .img-logo {
+          max-width: 50px;
+          max-height: 50px;
+      }
+
+
+
+
+      .carousel-inner>.carousel-item {
+          height: 500px;
+      }
+
+      .carousel-caption>h1 {
+          font-size: 40px;
+          word-break: keep-all;
+      }
+
+      .carousel-item>.carousel-caption {
+          bottom: 9em;
+      }
+
+      .carousel-caption>h1 {
+          font-size: 8vw;
+          word-break: keep-all;
+      }
+
+      .carousel-caption>p {
+          font-size: 17px;
+      }
+
+
+
+  }
+
+  @media(min-width: 540px) {
+
+      /* For smaller screens */
+      .container-cards-clientes {
+          display: none;
+      }
+  }
+
+  @media(max-width: 540px) {
+      #carousel-clientes {
+          display: none;
+      }
+  }
+
+
+  @media(min-width: 992px) {
+
+      .carousel-item>.carousel-caption {
+          bottom: 8.5rem;
+      }
+
+      .carousel-caption>h1 {
+          font-size: 5rem;
+      }
+
+      .carousel-caption>p {
+          font-size: 20px;
+      }
+
+  }
+
+
+
+  /*   SOBRE   */
+
+
+
+
+
+
+  /*   PARCEIROS    */
+  .parceiros-inner-container {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .parceiros-inner-container-1 {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .parceiros-inner-container-1>img {
+      min-width: 100px;
+      height: 100px;
+      max-width: 150px;
+  }
+
+  .parceiros-inner-container-2>img {
+      width: 210px;
+
+  }
+
+  @media(min-width: 466px) {
+      .parceiros-inner-container {
+          flex-direction: row;
+      }
+  }
+
+  @media(min-width: 683px) {
+      .parceiros-inner-container {
+          flex-direction: row;
+      }
+
+      .parceiros-inner-container-1 {
+          display: flex;
+          width: 440px;
+
+      }
+
+      .parceiros-inner-container-1>img {
+          min-width: 120px;
+          height: 120px;
+          max-width: 170px;
+      }
+  }
+
+  @media(min-width: 960px) {
+      .parceiros-inner-container-1 {
+          display: flex;
+          width: 600px;
+      }
+
+      .parceiros-inner-container-1>img {
+
+          height: 150px;
+          max-width: 230px;
+      }
+
+      .parceiros-inner-container-2>img {
+          width: 300px;
+
+      }
+  }
+
+
+
+  /*   IMOBILIARIAS   */
+
+
+
+
+
+
+  /*   CONTATO   */
+.container-contato > .container-xl{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-contato > .container-xl > form{
+    width: 100%;
+    max-width: 450px;
+}
+
+@media(min-width: 900px) {
+    .container-contato > .container-xl{
+        flex-direction: row
+    }
+
+}
+
+
+
+
+  /*   FOOTER    */
+  footer>.container-xl {
+      display: flex;
+      flex-direction: column;
+  }
+
+  @media(min-width: 640px) {
+      footer>.container-xl {
+          flex-direction: row;
+      }
+
+  }
+
+  .btn-wpp {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+  }
