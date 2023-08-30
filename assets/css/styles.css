@@ -80,8 +80,11 @@
       filter: brightness(0.5);
       z-index: -1;
       height: 100%;
-  }
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
+  }
 
   .img-principal-2 {
       background-image: url("../images/recepcionista.jpg");
@@ -99,7 +102,31 @@
       height: 100%;
   }
 
+  .carousel-caption {
+      left: 50%;
+      top: 59%;
+      transform: translate(-50%, -50%);
+  }
 
+/*   .carousel-inner>.carousel-item {
+      height: 300px;
+  } */
+
+  .carousel-item>.carousel-caption {
+      bottom: 2rem;
+  }
+
+  .carousel-caption>h1 {
+      font-size: 8vw;
+      word-break: keep-all;
+      font-family: 'Lora', serif;
+  }
+
+  .carousel-caption>p {}
+
+  .carousel-inner>.carousel-item {
+      height: 600px;
+  }
 
 
 
@@ -160,22 +187,6 @@
       flex-wrap: wrap;
   }
 
-  .carousel-inner>.carousel-item {
-      height: 300px;
-  }
-
-  .carousel-item>.carousel-caption {
-      bottom: 2rem;
-  }
-
-  .carousel-caption>h1 {
-      font-size: 8vw;
-      word-break: keep-all;
-      font-family: 'Lora', serif;
-  }
-
-  .carousel-caption>p {}
-
 
 
 
@@ -197,9 +208,6 @@
 
 
 
-      .carousel-inner>.carousel-item {
-          height: 500px;
-      }
 
       .carousel-caption>h1 {
           font-size: 40px;
@@ -337,22 +345,23 @@
 
 
   /*   CONTATO   */
-.container-contato > .container-xl{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.container-contato > .container-xl > form{
-    width: 100%;
-    max-width: 450px;
-}
+  .container-contato>.container-xl {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
 
-@media(min-width: 900px) {
-    .container-contato > .container-xl{
-        flex-direction: row
-    }
+  .container-contato>.container-xl>form {
+      width: 100%;
+      max-width: 450px;
+  }
 
-}
+  @media(min-width: 900px) {
+      .container-contato>.container-xl {
+          flex-direction: row
+      }
+
+  }
 
 
 
