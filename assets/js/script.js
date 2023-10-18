@@ -1,27 +1,17 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var header = document.querySelector('nav');
-    var headerHeight = header.offsetHeight;
-    
-    window.addEventListener('scroll', function() {
-      if (window.scrollY > headerHeight) {
+const [...li_servicos] = document.querySelectorAll('.li-servicos')
 
-        header.classList.add('header-scrolled');
-        header.classList.add('border-bottom' , 'border-dark');
-        ///Change the img logo as well or make a png one
-        
+li_servicos.map(li => {
+  li.addEventListener('mouseover', () => {
+    resetStyle()
 
-    } else {
-        header.classList.remove('header-scrolled');
-        header.classList.remove('border-bottom' , 'border-dark');
-      }
-    });
-  });
-
-  console.log('fdsdfsd');
-
-  document.querySelector('.navbar-toggler').addEventListener('click', ()=>{
-
-      document.querySelector('nav').classList.toggle('background-black')
-      document.querySelector('#navbarNav').classList.toggle('background-black')
+    li.classList.add('js-li-hover')
   })
-  
+})
+
+
+function resetStyle(){
+  let [...li_servicos] = document.querySelectorAll('.li-servicos')
+  li_servicos.map(li => {
+    li.classList.remove('js-li-hover')
+  })
+}

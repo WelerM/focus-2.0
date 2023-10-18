@@ -4,15 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>
-
-    </title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"
-        defer></script>
-
+    <title>Focus Service - Página inicial</title>
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <script src="./assets/js/bootstrap.bundle.min.js" defer></script>
     <link rel="stylesheet" href="./assets/css/styles.css">
     <script src="./assets/js/script.js" defer></script>
 
@@ -20,48 +14,111 @@
 
 <body class="position-relative">
 
-    <nav class="navbar navbar-expand-lg fixed-top  text-light" style="height:70px; ">
+    <nav class="navbar navbar-expand-lg fixed-top border-bottom shadow-lg bg-white p-0">
 
-        <div class="nav-container container-fluid  d-flex justify-content-between">
+        <div class="nav-container container-fluid  d-flex justify-content-between h-100">
 
-            <a class="navbar-brand  d-flex align-items-center" href="index.html">
+            <!-- Header LOGO -->
+            <a class="navbar-brand d-flex align-items-center m-0 p-0 h-100" href="index.html">
 
-                <img src="./assets/images/logo.png" class="img-logo me-2" alt="">
+                <img src="./assets/images/logowhite.png" class="img-logo" alt="">
 
-                <h1 class="logo-text text-white m-0">FOCUS SERVIÇOS</h1>
+                <h1 class="logo-text m-0">FOCUS SERVICE</h1>
 
             </a>
 
-            <button class="navbar-toggler p-0 me-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-list"
-                    viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-                </svg>
-            </button>
 
-            <!-- Ul's -->
-            <div id="navbarNav" class="collapse navbar-collapse" style="flex-grow: 0;">
+            <!-- Header MENU -->
+            <button class="btn-menu bg-main-color text-light navbar-toggler border " type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">MENU</button>
 
-                <ul class="navbar-nav py-3 text-center">
+            <!-- Header UL -->
+            <div id="navbarNav" class="collapse navbar-collapse bg-white " style="flex-grow: 0;">
+
+                <ul class="navbar-nav  text-center fw-bold">
+
+
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle  fs-5" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Serviços
+                        </a>
+
+                        <ul class="dropdown-menu text-dark">
+
+                            <li><a class="dropdown-item text-dark" href="./servicos/todos-servicos.html">Todos
+                                    serviços</a></li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <li class=""><a class="dropdown-item " href="./servicos/portaria.html">Portaria</a></li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <li><a class="dropdown-item" href="./servicos/limpeza.html">Limpeza</a></li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <li><a class="dropdown-item" href="./servicos/servicos-gerais.html">Serviços gerais</a></li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <li><a class="dropdown-item" href="./servicos/zeladoria.html">Zeladoria</a></li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <li><a class="dropdown-item" href="./servicos/manutencao-predial.html">Manutenção
+                                    Predial</a></li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <li><a class="dropdown-item" href="./servicos/recepcionista.html">Recepcionista</a></li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <li><a class="dropdown-item" href="./servicos/ascensorista.html">Ascensorista</a></li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <li><a class="dropdown-item" href="./servicos/jardinagem.html">Jardinagem</a></li>
+
+                        </ul>
+
+                    </li>
 
                     <li class="nav-item mx-2 ">
-                        <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link  fs-5" aria-current="page" href="empresa.html">Empresa</a>
                     </li>
+
+
 
                     <li class="nav-item mx-2">
-                        <a class="nav-link text-light" href="contato.html">Contato</a>
+                        <a class="nav-link  fs-5" href="contato.html">Contato</a>
                     </li>
 
-                    <li class="nav-item mx-2">
-                        <a class="nav-link text-light" href="servicos.html">Serviços</a>
-                    </li>
 
-                    <div class="container-icon-redes-sociais m-auto d-flex align-items-center justify-content-between "
+                    <div class="container-icon-redes-sociais  m-auto d-flex align-items-center justify-content-between "
                         style="width:fit-content">
 
-                        <a class="text-white mx-2" href="" target="_blank">
+                        <a class="custom-gray-color mx-2" href="" target="_blank">
 
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-whatsapp" viewBox="0 0 16 16">
@@ -70,7 +127,7 @@
                             </svg>
                         </a>
 
-                        <a class="text-light mx-2" href="">
+                        <a class=" mx-2 text-dark" href="">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-instagram" viewBox="0 0 16 16">
                                 <path
@@ -78,7 +135,7 @@
                             </svg>
                         </a>
 
-                        <a class="text-light mx-2" href="">
+                        <a class="custom-gray-color mx-2" href="">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-facebook" viewBox="0 0 16 16">
                                 <path
@@ -86,7 +143,7 @@
                             </svg>
                         </a>
 
-                        <a class="text-light mx-2" href="">
+                        <a class="custom-gray-color mx-2" href="">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-telegram" viewBox="0 0 16 16">
                                 <path
@@ -94,7 +151,7 @@
                             </svg>
                         </a>
 
-                        <a class="text-light mx-2" href="">
+                        <a class="custom-gray-color mx-2 " href="">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-linkedin" viewBox="0 0 16 16">
                                 <path
@@ -112,13 +169,13 @@
 
     </nav>
 
-    <div class="index-content bg-body-tertiary">
+    <div class="index-content bg-body-tertiary" style="margin-top: 70px;">
 
         <!-- PRINCIPAL -->
         <section class="container-principal bg-dark m-0">
 
             <!-- data-bs-ride="carousel" -->
-            <div id="carousel-principal" class="carousel slide carousel-fade h-100">
+            <div id="carousel-principal" class="carousel slide carousel-fade h-100" data-bs-ride="carousel">
 
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carousel-principal" data-bs-slide-to="0" class="active"
@@ -130,9 +187,9 @@
                 </div>
 
 
-                <div class="carousel-inner">
+                <div id="carousel-inner-principal" class="carousel-inner">
 
-                    <div class="carousel-item active">
+                    <div class="carousel-item    active">
 
                         <div class="img-principal-1  w-100" alt="..."></div>
                         <div class="carousel-caption w-100 px-3">
@@ -162,11 +219,11 @@
 
                     </div>
 
-                    <div class="carousel-item">
+                    h <div class="carousel-item">
 
                         <div class="img-principal-3 w-100" alt="...">
 
-                            
+
                         </div>
                         <div class="carousel-caption w-100 px-3">
 
@@ -199,7 +256,7 @@
 
 
         <!-- SERVIÇOS -->
-        <section class="container-servicos py-5 m-0  " style="background-color: #ECECEC;">
+        <section class="container-servicos bg-white py-5 m-0  ">
 
             <div class="container-xl">
 
@@ -207,78 +264,98 @@
 
                 <div class="card-container  d-flex flex-wrap align-items-center justify-content-center">
 
-                    <a href="portaria.html" class="card m-2 shadow-lg" style="width: 18rem;">
+                    <a href="./servicos/portaria.html" class="card m-2 shadow-lg" style="width: 18rem;">
 
                         <img src="./assets/images/porteiro.jpg" class="card-img-top" alt="...">
 
                         <div class="card-body ">
-                            <h5 class="card-title">Portaria</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <button type="button" class="btn btn-success">Saiba mais</button>
+                            <h5 class="card-title fw-semibold">Portaria</h5>
+                            <p class="card-text">Oferecemos segurança e atendimento personalizado para condomínios e empresas, garantindo o controle de acesso e a tranquilidade de todos.</p>
+                            <button type="button" class="btn bg-main-color text-light mt-2">Saiba mais</button>
                         </div>
 
                     </a>
 
-                    <a href="servicos.html" class="card m-2 shadow-lg" style="width: 18rem;">
+                    <a href="./servicos/limpeza.html" class="card m-2 shadow-lg" style="width: 18rem;">
                         <img src="./assets/images/porteiro.jpg" class="card-img-top" alt="...">
 
                         <div class="card-body">
-                            <h5 class="card-title">Limpeza</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <button class="btn btn-success">Saiba mais</button>
+                            <h5 class="card-title fw-semibold">Limpeza</h5>
+                            <p class="card-text">Nosso serviço de limpeza proporciona higiene e bem-estar, mantendo ambientes impecáveis em condomínios e empresas..</p>
+                            <button class="btn mt-2 bg-main-color text-light">Saiba mais</button>
                         </div>
 
                     </a>
 
-
-                    <a href="servicos.html" class="card m-2 shadow-lg" style="width: 18rem;">
+                    <a href="./servicos/monitoramento.html" class="card m-2 shadow-lg" style="width: 18rem;">
 
                         <img src="./assets/images/porteiro.jpg" class="card-img-top" alt="...">
 
                         <div class="card-body">
-                            <h5 class="card-title">Monitoramento</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <button href="#" class="btn btn-success">Saiba mais</button>
+                            <h5 class="card-title fw-semibold">Monitoramento</h5>
+                            <p class="card-text">Nossa solução de monitoramento garante proteção e vigilância contínua para condomínios e empresas, assegurando a tranquilidade de todos.</p>
+                            <button href="#" class="btn bg-main-color text-light mt-2">Saiba mais</button>
                         </div>
 
                     </a>
 
-                    <a href="servicos.html" class="card m-2 shadow-lg" style="width: 18rem;">
+                    <a href="./servicos/servicos-gerais.html" class="card m-2 shadow-lg" style="width: 18rem;">
                         <img src="./assets/images/porteiro.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Portaria</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <button class="btn btn-success">Saiba mais</button>
+                            <h5 class="card-title fw-semibold">Serviços gerais</h5>
+                            <p class="card-text">Com uma ampla gama de serviços gerais, abordamos diversas necessidades, oferecendo soluções versáteis para condomínios e empresas.</p>
+                            <button class="btn bg-main-color text-light mt-2">Saiba mais</button>
                         </div>
                     </a>
 
-                    <a href="servicos.html" class="card m-2 shadow-lg" style="width: 18rem;">
+                    <a href="./servicos/recepcionista.html" class="card m-2 shadow-lg" style="width: 18rem;">
                         <img src="./assets/images/porteiro.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Limpeza</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <button href="#" class="btn btn-success">Saiba mais</button>
+                            <h5 class="card-title fw-semibold">Recepcionista</h5>
+                            <p class="card-text">Recepcionistas profissionais proporcionam acolhida calorosa, criando excelente primeira impressão em empresas e escritórios.</p>
+                            <button href="#" class="btn bg-main-color text-light mt-2">Saiba mais</button>
                         </div>
                     </a>
 
-                    <a href="servicos.html" class="card m-2 shadow-lg" style="width: 18rem;">
+                    <a href="./servicos/manutencao-predial.html" class="card m-2 shadow-lg" style="width: 18rem;">
                         <img src="./assets/images/porteiro.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Monitoramento</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <button class="btn btn-success">Saiba mais</button>
+                            <h5 class="card-title fw-semibold">Manutenção predial</h5>
+                            <p class="card-text">A manutenção predial abrange serviços essenciais, garantindo a durabilidade e funcionalidade de edifícios e instalações.</p>
+                            <button class="btn bg-main-color text-light mt-2">Saiba mais</button>
+                        </div>
+                    </a>
+
+                    <a href="./servicos/zeladoria.html" class="card m-2 shadow-lg" style="width: 18rem;">
+
+                        <img src="../assets/images/porteiro.jpg" class="card-img-top" alt="...">
+        
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold">Zeladoria</h5>
+                            <p class="card-text">A zeladoria abrange serviços de cuidado e manutenção, preservando a ordem e o bom funcionamento de propriedades e condomínios.</p>
+                            <button class="btn bg-main-color text-light mt-2">Saiba mais</button>
+                        </div>
+                    </a>
+        
+                    <a href="./servicos/ascensorista.html" class="card m-2 shadow-lg" style="width: 18rem;">
+        
+                        <img src="../assets/images/porteiro.jpg" class="card-img-top" alt="...">
+        
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold">Ascensorista</h5>
+                            <p class="card-text">O trabalho de ascensorista assegura um transporte eficiente e seguro em edifícios, priorizando a comodidade e a gestão dos elevadores.</p>
+                            <button class="btn bg-main-color text-light mt-2">Saiba mais</button>
+                        </div>
+                    </a>
+        
+                    <a href="./servicos/jardinagem.html" class="card m-2 shadow-lg" style="width: 18rem;">
+        
+                        <img src="../assets/images/porteiro.jpg" class="card-img-top" alt="...">
+        
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold">Jardinagem</h5>
+                            <p class="card-text">Nossos serviços de jardinagem transformam espaços em áreas verdes vibrantes, adicionando beleza e harmonia ao ambiente.</p>
+                            <button class="btn bg-main-color text-light mt-2">Saiba mais</button>
                         </div>
                     </a>
 
@@ -287,416 +364,6 @@
             </div>
 
         </section>
-
-
-        <!-- CLIENTES -->
-        <section class="container-clientes py-5  border-bottom border-dark bg-white ">
-
-            <div class="m-auto d-flex align-items-center" style="width: fit-content">
-                <img class="mb-3 me-2" src="./assets/images/logowhite.jpg" style="width: 80px; height: 70px;" alt="">
-                <h1>Clientes</h1>
-            </div>
-
-
-            <!-- For smaller screena -->
-            <div class="container-cards-clientes text-center">
-
-
-                <!-- ===================================== -->
-                <button class="btn w-100 border p-4 d-flex align-items-center justify-content-between" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="false"
-                    aria-controls="collapse-1">
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
-                        class="bi bi-building" viewBox="0 0 16 16">
-                        <path
-                            d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1ZM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z" />
-                        <path
-                            d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V1Zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3V1Z" />
-                    </svg>
-
-                    <p class="m-0"><strong>Edifício Capelli</strong></p>
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-                    </svg>
-
-                </button>
-
-                <div class="collapse" id="collapse-1">
-
-                    <div class="card card-body p-4">
-                        Some placeholder content for the collapse component. This panel is hidden by default but
-                        revealed when the user activates the relevant trigger.
-                    </div>
-
-                </div>
-
-
-
-                <!-- ===================================== -->
-                <button class="btn w-100 border p-4 d-flex align-items-center justify-content-between" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false"
-                    aria-controls="collapse-2">
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
-                        class="bi bi-building" viewBox="0 0 16 16">
-                        <path
-                            d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1ZM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z" />
-                        <path
-                            d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V1Zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3V1Z" />
-                    </svg>
-
-
-                    <p class="m-0"><strong>Edifício José de Alencar</strong></p>
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-                    </svg>
-
-                </button>
-
-                <div class="collapse" id="collapse-2">
-
-                    <div class="card card-body p-4">
-                        Some placeholder content for the collapse component. This panel is hidden by default but
-                        revealed when the user activates the relevant trigger.
-                    </div>
-
-                </div>
-
-
-                <!-- ===================================== -->
-                <button class="btn w-100 border p-4 d-flex align-items-center justify-content-between" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false"
-                    aria-controls="collapse-3">
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
-                        class="bi bi-building" viewBox="0 0 16 16">
-                        <path
-                            d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1ZM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z" />
-                        <path
-                            d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V1Zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3V1Z" />
-                    </svg>
-
-
-                    <p class="m-0"><strong>Edifício Pamplona</strong></p>
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-                    </svg>
-
-                </button>
-
-                <div class="collapse" id="collapse-3">
-
-                    <div class="card card-body p-4">
-                        Some placeholder content for the collapse component. This panel is hidden by default but
-                        revealed when the user activates the relevant trigger.
-                    </div>
-
-                </div>
-
-
-                <!-- ===================================== -->
-                <button class="btn w-100 border p-4 d-flex align-items-center justify-content-between" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false"
-                    aria-controls="collapse-4">
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
-                        class="bi bi-building" viewBox="0 0 16 16">
-                        <path
-                            d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1ZM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z" />
-                        <path
-                            d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V1Zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3V1Z" />
-                    </svg>
-
-
-                    <p class="m-0"><strong>Edifício Las Vegas</strong></p>
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-                    </svg>
-
-                </button>
-
-                <div class="collapse" id="collapse-4">
-
-                    <div class="card card-body p-4">
-                        Some placeholder content for the collapse component. This panel is hidden by default but
-                        revealed when the user activates the relevant trigger.
-                    </div>
-
-                </div>
-
-
-                <!-- ===================================== -->
-                <button class="btn w-100 border p-4 d-flex align-items-center justify-content-between" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#collapse-5" aria-expanded="false"
-                    aria-controls="collapse-5">
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
-                        class="bi bi-building" viewBox="0 0 16 16">
-                        <path
-                            d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1ZM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z" />
-                        <path
-                            d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V1Zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3V1Z" />
-                    </svg>
-
-
-                    <p class="m-0"><strong>Lojas Colchões Castor</strong></p>
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-                    </svg>
-
-                </button>
-
-                <div class="collapse" id="collapse-5">
-
-                    <div class="card card-body p-4">
-                        Some placeholder content for the collapse component. This panel is hidden by default but
-                        revealed when the user activates the relevant trigger.
-                    </div>
-
-                </div>
-
-
-                <!-- ===================================== -->
-                <button class="btn w-100 border p-4 d-flex align-items-center justify-content-between" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#collapse-6" aria-expanded="false"
-                    aria-controls="collapse-6">
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
-                        class="bi bi-building" viewBox="0 0 16 16">
-                        <path
-                            d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1ZM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z" />
-                        <path
-                            d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V1Zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3V1Z" />
-                    </svg>
-
-
-                    <p class="m-0"><strong>Edifício Província</strong></p>
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-                    </svg>
-
-                </button>
-
-                <div class="collapse" id="collapse-6">
-
-                    <div class="card card-body p-4">
-                        Some placeholder content for the collapse component. This panel is hidden by default but
-                        revealed when the user activates the relevant trigger.
-                    </div>
-
-                </div>
-
-
-
-                <!-- 
-                <div class="card m-2 d-inline-block">
-
-                    <img src="./assets/images/ed-capelli.PNG" class="card-img-top" alt="...">
-
-                    <div class="card-body">
-                        <h5 class="card-title">Edifício Capelli</h5>
-                    </div>
-
-                </div>
-
-                <div class="card m-2 d-inline-block" >
-
-                    <img src="./assets/images/ed-josedealencar.png" class="card-img-top" alt="...">
-
-                    <div class="card-body">
-                        <h5 class="card-title">Edifício José de Alencar</h5>
-                    </div>
-
-                </div>
-
-
-                <div class="card m-2 d-inline-block" >
-
-                    <img src="./assets/images/ed-pamplona.png" class="card-img-top" alt="...">
-
-                    <div class="card-body">
-                        <h5 class="card-title">Edifício Pamplona</h5>
-                    </div>
-
-                </div>
-
-
-                <div class="card m-2 d-inline-block" >
-
-                    <img src="./assets/images/ed-lasvegas.png" class="card-img-top" alt="...">
-
-                    <div class="card-body">
-                        <h5 class="card-title">Edifício Las Vegas</h5>
-                    </div>
-
-                </div>
-
-
-                <div class="card m-2 d-inline-block" >
-
-                    <img src="./assets/images/lojascolchoes.png" class="card-img-top" alt="...">
-
-                    <div class="card-body">
-                        <h5 class="card-title">Lojas Colcões Castor</h5>
-                    </div>
-
-                </div>
-
-
-                <div class="card m-2 d-inline-block">
-
-                    <img src="./assets/images/ed-provincia.png" class="card-img-top" alt="...">
-
-                    <div class="card-body">
-                        <h5 class="card-title">Edifício Província</h5>
-                    </div>
-
-                </div>
- -->
-            </div>
-
-            <!-- For bigger screena -->
-            <div id="carousel-clientes" class="carousel slide" style="height: 400px;">
-
-                <div class="carousel-indicators">
-                    <button class="active " type="button" data-bs-target="#carousel-principal" data-bs-slide-to="0"
-                        aria-current="true" aria-label="Slide 1"></button>
-
-                    <button class="" type="button" data-bs-target="#carousel-principal" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                </div>
-
-
-                <div class="carousel-inner">
-
-                    <div class="carousel-item active">
-
-                        <div class="carousel-caption d-flex align-items-center">
-
-
-                            <div class=" card m-2 d-inline-block shadow-lg" style="width: 18rem;">
-
-                                <img src="./assets/images/ed-capelli.png" class="card-img-bg-screen card-img-top"
-                                    alt="...">
-
-                                <div class="card-body">
-                                    <h5 class="card-title">Edifício Capelli</h5>
-                                </div>
-
-                            </div>
-
-
-                            <div class="card m-2 d-inline-block shadow-lg" style="width: 18rem;">
-
-                                <img src="./assets/images/ed-josedealencar.png" class="card-img-top" alt="...">
-
-                                <div class="card-body">
-                                    <h5 class="card-title">Edifício José de Alencar</h5>
-                                </div>
-
-                            </div>
-
-
-                            <div class="card m-2 d-inline-block shadow-lg" style="width: 18rem;">
-
-                                <img src="./assets/images/ed-pamplona.png" class="card-img-top" alt="...">
-
-                                <div class="card-body">
-                                    <h5 class="card-title">Edifício Pamplona</h5>
-                                </div>
-
-                            </div>
-
-
-                        </div>
-
-                    </div>
-
-                    <div class="carousel-item ">
-
-                        <div class="carousel-caption d-flex align-items-center ">
-
-
-                            <div class="card m-2 d-inline-block shadow-lg" style="width: 18rem;">
-
-                                <img src="./assets/images/ed-lasvegas.png" class="card-img-top" alt="...">
-
-                                <div class="card-body">
-                                    <h5 class="card-title">Edifício Las Vegas</h5>
-                                </div>
-
-                            </div>
-
-
-                            <div class="card m-2 d-inline-block shadow-lg" style="width: 18rem;">
-
-                                <img src="./assets/images/lojascolchoes.png" class="card-img-top" alt="...">
-
-                                <div class="card-body">
-                                    <h5 class="card-title">Lojas Colcões Castor</h5>
-                                </div>
-
-                            </div>
-
-
-                            <div class="card m-2 d-inline-block shadow-lg" style="width: 18rem;">
-
-                                <img src="./assets/images/ed-provincia.png" class="card-img-top" alt="...">
-
-                                <div class="card-body">
-                                    <h5 class="card-title">Edifício Província</h5>
-                                </div>
-
-                            </div>
-
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-clientes"
-                    data-bs-slide="prev">
-
-
-                    <img src="./assets/images/arrow.png" alt="" style=" transform: scaleX(-1)">
-
-                    <span class="visually-hidden">Previous</span>
-
-                </button>
-
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel-clientes"
-                    data-bs-slide="next">
-
-                    <img src="./assets/images/arrow.png" alt="">
-                    <span class="visually-hidden">Next</span>
-                </button>
-
-            </div>
-
-        </section>
-
 
 
         <!-- SOBRE -->
@@ -704,19 +371,12 @@
 
             <div class="container-xl ">
 
-                <div class="container-sobre-texto py-2 ">
+                <div class="container-sobre-texto py-2 d-flex">
 
+                    <!-- Sobre a focus -->
+                    <div class="w-50 ">
 
-                    <div class="m-auto d-flex align-items-center" style="width: fit-content">
-                        <img class="mb-3 me-2" src="./assets/images/logo.PNG" style="width: 60px;" alt="">
                         <h1>Sobre a Focus</h1>
-                    </div>
-
-
-                    <div class="d-inline">
-
-                        <img style="  overflow-wrap: break-word;" class="d-none w-50 m-1  float-end img-fluid"
-                            src="./assets/images/porteiro.jpg" alt="">
 
                         <p class="d-inline">
                             <strong>A Focus</strong> é uma empresa gaúcha... Lorem ipsum dolor sit amet consectetur
@@ -736,8 +396,7 @@
                             doloremque quisquam? Consequatur qui ut alias quasi.
                         </p>
 
-
-                        <div class="my-4">
+                        <div class="my-4 w-50">
                             <div class="d-flex align-items-center ">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="green"
                                     class="bi bi-check-lg" viewBox="0 0 16 16">
@@ -772,7 +431,70 @@
 
                     </div>
 
+                    <!-- Imagem à direita -->
+                    <div class="w-50">
 
+                        <img class=" w-75 m-1 border-0  float-end img-fluid" src="./assets/images/logo.png" alt="">
+
+                    </div>
+
+                </div>
+
+
+                <!-- Alguns de nossos clientes -->
+                <div class="container-cards-clientes d-flex py-5 align-items-start">
+
+                    <!-- Imagem à esquerda -->
+                    <div class="w-50">
+                        <img class=" w-75 m-1 border-0  img-fluid" src="./assets/images/logo.png" alt="">
+                    </div>
+
+                    <!-- Alguns de nossos clientes -->
+                    <div class="container-cards-bigger-screens w-50 flex-column ">
+
+                        <h1 class="text-center">Alguns de nossos clientes</h1>
+
+                        <div class=" w-100  d-flex flex-wrap align-items-center   ">
+
+                            <div class="d-flex flex-column align-items-center justify-content-center m-1">
+                                <img class="rounded-circle shadow-lg" style="width: 100px; height: 100px;"
+                                    src="./assets/images/ed-capelli.png" alt="">
+                                <p class="mt-1 text-center">Ed. Capelli</p>
+                            </div>
+
+                            <div class="d-flex flex-column align-items-center justify-content-center m-1">
+                                <img class="rounded-circle shadow-lg" style="width: 100px; height: 100px;"
+                                    src="./assets/images/ed-josedealencar.png" alt="">
+                                <p class="mt-1 text-center">Ed. José de Alencar</p>
+                            </div>
+
+                            <div class="d-flex flex-column align-items-center justify-content-center m-1">
+                                <img class="rounded-circle shadow-lg" style="width: 100px; height: 100px;"
+                                    src="./assets/images/ed-pamplona.png" alt="">
+                                <p class="mt-1 text-center">Ed. Pamplona</p>
+                            </div>
+
+                            <div class="d-flex flex-column align-items-center justify-content-center m-1">
+                                <img class="rounded-circle shadow-lg" style="width: 100px; height: 100px;"
+                                    src="./assets/images/ed-lasvegas.png" alt="">
+                                <p class="mt-1 text-center">Ed. Las Vegas</p>
+                            </div>
+
+                            <div class="d-flex flex-column align-items-center justify-content-center m-1">
+                                <img class="rounded-circle shadow-lg" style="width: 100px; height: 100px;"
+                                    src="./assets/images/lojascolchoes.png" alt="">
+                                <p class="mt-1 text-center">Lojas Colchões Castor</p>
+                            </div>
+
+                            <div class="d-flex flex-column align-items-center justify-content-center m-1">
+                                <img class="rounded-circle shadow-lg" style="width: 100px; height: 100px;"
+                                    src="./assets/images/ed-provincia.png" alt="">
+                                <p class="mt-1 text-center">Ed. Província</p>
+                            </div>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
@@ -781,45 +503,65 @@
         </section>
 
 
-
-        <!-- PARCEIROS -->
+        <!-- PARCEIROS E IMOBILIÁRIAS -->
         <section class="container-parceiros py-5  mb-5">
 
-            <div class="container-xl">
+            <div class="container-xl d-flex">
 
-                <h1>Parceiros</h1>
+                <div class="w-50">
 
-                <div class="parceiros-inner-container d-flex justify-content-center">
+                    <h1 class="text-center">Parceiros</h1>
 
+                    <div class="parceiros-inner-container d-flex justify-content-center">
 
-                    <div class="parceiros-inner-container-1  m-0  align-items-center justify-content-center ">
+                        <div class="parceiros-inner-container-1  m-0  align-items-center justify-content-center ">
 
-                        <img class=" m-1" src="./assets/images/bslimp.PNG" alt="">
-
-
-                        <img class=" m-1" src="./assets/images/bmsul.png" alt="">
+                            <img class=" m-1" src="./assets/images/bslimp.PNG" alt="">
 
 
-                        <img class=" m-1" src="./assets/images/caju.png" alt="">
-
-                        <img class=" m-1" src="./assets/images/airgo.png" alt="">
+                            <img class=" m-1" src="./assets/images/bmsul.png" alt="">
 
 
-                        <img class="m-1" src="./assets/images/kinghost.png" alt="">
+                            <img class=" m-1" src="./assets/images/caju.png" alt="">
+
+                            <img class=" m-1" src="./assets/images/airgo.png" alt="">
 
 
-                        <img class=" m-1" src="./assets/images/mkj.png" alt="">
+                            <img class="m-1" src="./assets/images/kinghost.png" alt="">
+
+
+                            <img class=" m-1" src="./assets/images/mkj.png" alt="">
+
+
+                            <img class=" my-3" src="./assets/images/padroniza.png" alt="">
+                            <img class=" my-3" src="./assets/images/ss.png" alt="">
+                            <img class=" my-3" src="./assets/images/mauro.png" alt="">
+
+                        </div>
 
                     </div>
 
+                </div>
 
-                    <div
-                        class="parceiros-inner-container-2  d-flex flex-column align-items-center justify-content-center">
+                <div class="w-50">
+                    <h1 class="text-center">Imobiliárias</h1>
 
-                        <img class=" my-3" src="./assets/images/padroniza.png" alt="">
-                        <img class=" my-3" src="./assets/images/ss.png" alt="">
-                        <img class=" my-3" src="./assets/images/mauro.png" alt="">
+                    <div class="row">
+                        <img class="col m-2 my-3 shadow-lg p-0 rounded" style="width:100px;"
+                            src="./assets/images/imobiliaria-guarida.png" alt="">
+                        <img class="col m-2 my-3 shadow-lg p-0 rounded" style="width:100px;"
+                            src="./assets/images/imobiliaria-renato-serafim.png" alt="">
+                        <img class="col m-2 my-3 shadow-lg p-0 rounded" style="width:100px;"
+                            src="./assets/images/imobiliaria-farrapos.png" alt="">
+                    </div>
 
+                    <div class="row">
+                        <img class="col m-2 my-3 shadow-lg p-0 rounded" style="width:100px;"
+                            src="./assets/images/imobiliaria-freire.png" alt="">
+                        <img class="col m-2 my-3 shadow-lg p-0 rounded" style="width:100px;"
+                            src="./assets/images/imobiliaria-x.png" alt="">
+                        <img class="col m-2 my-3 shadow-lg p-0 rounded" style="width:100px;"
+                            src="./assets/images/imobiliaria-portolar.png" alt="">
                     </div>
 
                 </div>
@@ -827,33 +569,6 @@
             </div>
 
         </section>
-
-
-
-        <!-- IMOBILIÁRIAS -->
-        <section class="container-imoniliarias my-4">
-
-            <div class="container-xl">
-
-                <h1>Imobiliárias</h1>
-
-                <div class="row">
-                    <img class="col my-3" style="width:100px;" src="./assets/images/imobiliaria-guarida.png" alt="">
-                    <img class="col my-3" style="width:100px;" src="./assets/images/imobiliaria-renato-serafim.png"
-                        alt="">
-                    <img class="col my-3" style="width:100px;" src="./assets/images/imobiliaria-farrapos.png" alt="">
-                </div>
-
-                <div class="row">
-                    <img class="col my-3" style="width:100px;" src="./assets/images/imobiliaria-freire.png" alt="">
-                    <img class="col my-3" style="width:100px;" src="./assets/images/imobiliaria-x.png" alt="">
-                    <img class="col my-3" style="width:100px;" src="./assets/images/imobiliaria-portolar.png" alt="">
-                </div>
-
-            </div>
-
-        </section>
-
 
 
         <!--   CONTATO    -->
@@ -861,11 +576,14 @@
 
             <div class="container-xl ">
 
-                <div class="contato-section-text mb-4 d-flex flex-column  justify-content-center"
-                    style="max-width: 450px;">
-                    <p class="text-light fs-5 my-2">Pronto para dar os próximos passos?</p>
+                <div class="contato-section-text mb-4 d-flex flex-column  justify-content-center">
+
+                    <p class="text-light fs-4 my-2">Pronto para dar os próximos passos?</p>
+
                     <h1 class="text-light ">Entre em contato conosco e tire todas suas dúvidas!</h1>
-                    <p class="text-light fs-5 my-2">Sua <strong>tranquilidade</strong> começa aqui.</p>
+
+                    <p class="text-light fs-4 my-2">Sua tranquilidade começa aqui.</p>
+
                 </div>
 
                 <form class=" mt-0  p-3" style="" action="enviaremail.php" method="post">
@@ -873,38 +591,35 @@
 
                     <div class="mb-3">
 
-                        <label for="nome" class="form-label text-light">Nome</label>
+                        <label for="nome" class="form-label text-light fs-5 d-none">Nome</label>
 
-                        <input type="text" class="form-control bg-dark text-light text-light border-0" id="nome"
-                            name="nome" aria-describedby="emailHelp">
+                        <input type="text" class="form-control bg-dark text-light  border-0" id="nome" name="nome"
+                            aria-describedby="emailHelp" placeholder="Nome">
                     </div>
 
                     <div class="mb-3">
 
-                        <label for="email" class="form-label text-light">Email</label>
+                        <label for="email" class="form-label text-light fs-5">Email</label>
                         <input type="email" class="form-control bg-dark border-0 text-light" id="email" name="email"
                             aria-describedby="emailHelp">
 
                     </div>
 
                     <div class="mb-3">
-                        <label for="numero" class="form-label text-light">Número</label>
+                        <label for="numero" class="form-label text-light fs-5">Número</label>
                         <input type="text" class="form-control bg-dark border-0 text-light" id="numero" name="numero"
                             aria-describedby="emailHelp">
                     </div>
 
                     <div class="mb-3">
-                        <label for="mensagem" class="form-label text-light">Mensagem (opcional)</label>
+                        <label for="mensagem" class="form-label text-light fs-5">Mensagem (opcional)</label>
                         <textarea class="form-control bg-dark border border-0 text-light" id="mensagem" name="mensagem"
                             rows="3"></textarea>
                     </div>
 
-                    <button type="submit" name="submit" class="btn btn-success w-100">Enviar</button>
-
-
+                    <button type="submit" name="submit" class="btn bg-main-color text-light w-100">Enviar</button>
 
                 </form>
-
 
             </div>
 
@@ -912,17 +627,20 @@
 
     </div>
 
-    <footer class=" p-4  bg-black text-light text-center">
+    <footer class=" py-5  bg-black text-light text-center">
 
         <div class="container-xl align-items-center justify-content-between p-0 w-100">
 
-            <div>
-                <ul class="p-0" style="min-width:200px">
-                    <li class="mb-1 fs-5"><strong>Focus</strong></li>
-                    <li>Home</li>
-                    <li>Contato</li>
-                    <li>Serviços</li>
-                </ul>
+            <div style="min-width:200px">
+
+                <a class="navbar-brand  d-flex align-items-center m-0" href="../index.html">
+
+                    <img src="../assets/images/logo.png" class="img-logo " alt="">
+
+                    <h1 class="logo-text m-0">FOCUS SERVICE</h1>
+
+                </a>
+
             </div>
 
             <div>
